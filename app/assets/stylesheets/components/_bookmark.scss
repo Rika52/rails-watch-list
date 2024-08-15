@@ -1,0 +1,12 @@
+.bookmark {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 30%;
+}
+
+.bookmark > img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+}

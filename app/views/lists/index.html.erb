@@ -1,0 +1,18 @@
+
+<div class="banner" style=" padding:130px 0; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%=asset_url("cinema.jpeg")%>); background-repeat: no-repeat; background-size: cover; background-position:center">
+  <div class="container">
+    <h1 style="color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); text-align: center;"> Save your movies</h1>
+  </div>
+</div>
+<br>
+<%@lists.each do |list|%>
+<br>
+<div class="card-trip">
+  <%=image_tag "cinema.jpeg"%>
+    <div>
+      <h2><%=link_to list.name, list_path(list)%></h2>
+    </div>
+</div>
+
+<%end%>
+<%=link_to "Create a movie list", new_list_path%>
